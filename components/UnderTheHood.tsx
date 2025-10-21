@@ -168,33 +168,6 @@ const UnderTheHood = () => {
           </div>
         </motion.div>
 
-        {/* Code Example */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-12 bg-gray-950 rounded-lg p-6 border border-gray-800"
-        >
-          <h4 className="text-sm font-semibold text-gray-300 mb-4 uppercase tracking-wide">
-            Example Implementation
-          </h4>
-          <pre className="text-sm text-gray-300 overflow-x-auto">
-            <code>{`// Semantic Similarity Rating (SSR) Implementation
-const calculateLikertScore = (response, anchorStatements) => {
-  const embedding = await getEmbedding(response);
-  const similarities = anchorStatements.map(anchor => 
-    cosineSimilarity(embedding, anchor.embedding)
-  );
-  return softmax(similarities).map(p => p * 5);
-};
-
-// Generate realistic distribution
-const distribution = responses.map(r => 
-  calculateLikertScore(r.text, calibratedAnchors)
-).reduce((acc, scores) => acc + scores, [0,0,0,0,0]);`}</code>
-          </pre>
-        </motion.div>
       </div>
     </section>
   );
