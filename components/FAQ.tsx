@@ -100,29 +100,6 @@ const FAQ = () => {
           </p>
         </motion.div>
 
-        {/* Additional Help */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center bg-gray-50 rounded-lg p-8 border border-gray-200"
-        >
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">
-            Still have questions?
-          </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Our team is here to help. Get in touch and we'll answer any questions you have about SimuPanel.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-              Contact Support
-            </button>
-            <button className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors">
-              Schedule a Demo
-            </button>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
