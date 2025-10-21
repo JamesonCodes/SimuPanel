@@ -7,35 +7,35 @@ const UnderTheHood = () => {
   const steps = [
     {
       number: '1',
-      title: 'Response Generation',
-      description: 'First, GPT-4o produces free-text consumer statements conditioned on demographic personas.',
+      title: 'Generate Realistic Responses',
+      description: 'Persona-conditioned prompting produces natural consumer statements.',
       icon: Cpu,
       details: [
-        'Trained on diverse consumer language patterns',
-        'Persona-specific response generation',
-        'Natural language processing for authenticity'
+        'Persona-conditioned prompting',
+        'Natural language generation',
+        'Diverse response patterns'
       ]
     },
     {
       number: '2',
-      title: 'Embedding Representation',
-      description: 'Next, each response is encoded into a high-dimensional semantic vector using OpenAI\'s text-embedding-3-small model.',
+      title: 'Encode Semantic Meaning',
+      description: 'High-dimensional embeddings capture semantic similarity and context.',
       icon: Database,
       details: [
-        '1536-dimensional vector space captures subtle meaning shifts in consumer language',
+        'High-dimensional embeddings',
         'Semantic similarity calculations',
-        'Context-aware embeddings'
+        'Context-aware encoding'
       ]
     },
     {
       number: '3',
-      title: 'Likert Mapping',
-      description: 'Finally, cosine similarity to five anchor statements yields probability distributions across the 1–5 scale — generating realistic variance instead of AI "averages."',
+      title: 'Map to Likert Scale',
+      description: 'Calibrated anchor statements yield realistic purchase-intent distributions.',
       icon: BarChart3,
       details: [
-        'Anchor statements for scale calibration',
-        'Probability distribution modeling',
-        'Preserves natural variance — avoiding AI "averaging"'
+        'Calibrated anchor statements',
+        'Cosine similarity scoring',
+        'Statistical variance preservation'
       ]
     }
   ];

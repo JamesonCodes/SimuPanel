@@ -36,9 +36,7 @@ export const pricingTiers: PricingTier[] = [
       'CSV + PDF exports',
       'Email support'
     ],
-    cta: 'Buy 5-Pack →',
-    popular: true,
-    badge: 'Save $10'
+    cta: 'Buy 5-Pack →'
   },
   {
     id: 'pack20',
@@ -60,10 +58,6 @@ export const faqData = [
   {
     question: "How accurate are the results?",
     answer: "The underlying SSR methodology achieves approximately 90% of human test–retest reliability on validated consumer datasets, benchmarked across 9,000 survey participants. This gives you the realism of human focus-group data, without the cost or waiting."
-  },
-  {
-    question: "What models power it?",
-    answer: "SimuPanel uses GPT-4o for natural, persona-specific responses and OpenAI's text-embedding-3-small for semantic similarity scoring — the same technique used in peer-reviewed research published by PyMC Labs and Colgate-Palmolive."
   },
   {
     question: "Can I upload images or mockups?",

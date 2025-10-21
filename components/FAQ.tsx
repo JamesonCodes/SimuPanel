@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Minus } from 'lucide-react';
+import { Plus, Minus, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { faqData } from '@/lib/pricing';
 
@@ -95,9 +95,13 @@ const FAQ = () => {
           <p className="text-lg font-semibold text-gray-900 mb-3">
             SimuPanel doesn't guess — it measures.
           </p>
-          <p className="text-lg text-gray-600">
-            Get your first validated consumer insights today.
+          <p className="text-lg text-gray-600 mb-6">
+            Get your first validated insights today.
           </p>
+          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto">
+            Run a Simulation ($9)
+            <ArrowRight className="w-4 h-4" />
+          </button>
         </motion.div>
 
       </div>

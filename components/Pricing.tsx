@@ -36,21 +36,8 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`relative bg-white rounded-lg border-2 p-8 ${
-                tier.popular 
-                  ? 'border-blue-200 shadow-lg scale-105' 
-                  : 'border-gray-200 shadow-sm'
-              } hover:shadow-lg transition-all duration-200`}
+              className="relative bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 p-8"
             >
-              {/* Popular Badge */}
-              {tier.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1">
-                    <Star className="w-4 h-4" />
-                    {tier.badge}
-                  </div>
-                </div>
-              )}
 
               {/* Tier Header */}
               <div className="text-center mb-8">
@@ -90,11 +77,7 @@ const Pricing = () => {
               {/* CTA Button */}
               <button
                 onClick={() => handleCtaClick(tier.id)}
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 ${
-                  tier.popular
-                    ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl'
-                    : 'bg-gray-900 text-white hover:bg-gray-800'
-                }`}
+                className="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 bg-gray-900 text-white hover:bg-gray-800"
               >
                 {tier.cta}
                 <ArrowRight className="w-4 h-4" />

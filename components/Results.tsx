@@ -52,22 +52,22 @@ const Results = () => {
             className="space-y-8"
           >
             {/* Key Metrics */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <div className="flex items-center gap-2 mb-2">
                   <TrendingUp className="w-5 h-5 text-blue-600" />
                   <span className="text-sm font-medium text-gray-600">Mean Purchase Intent</span>
                 </div>
-                <div className="text-3xl font-bold text-gray-900">4.2</div>
+                <div className="text-4xl font-bold text-gray-900">4.2</div>
                 <div className="text-sm text-gray-500">out of 5</div>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+              <div className="bg-green-50 rounded-lg p-6 border border-green-200">
                 <div className="flex items-center gap-2 mb-2">
                   <BarChart3 className="w-5 h-5 text-green-600" />
-                  <span className="text-sm font-medium text-gray-600">Distribution Similarity</span>
+                  <span className="text-sm font-medium text-gray-600">Reliability vs. Humans</span>
                 </div>
-                <div className="text-3xl font-bold text-gray-900">0.88</div>
-                <div className="text-sm text-gray-500">KS-similarity</div>
+                <div className="text-4xl font-bold text-gray-900">≈90%</div>
+                <div className="text-sm text-gray-500">test-retest accuracy</div>
               </div>
             </div>
 
@@ -92,6 +92,8 @@ const Results = () => {
               </div>
               <div className="mt-4 text-xs text-gray-500 text-center">
                 1 = Very Unlikely to Purchase • 5 = Very Likely to Purchase
+                <br />
+                <span className="text-gray-400">KS-similarity: 0.88</span>
               </div>
             </div>
 

@@ -44,7 +44,7 @@ const FinalCTA = () => {
           </h2>
           
           <p className="text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
-            SimuPanel uses validated AI and peer-reviewed science to mirror real consumer behavior — instantly.
+            SimuPanel uses validated AI and peer-reviewed science to simulate real consumer behavior — instantly.
           </p>
 
           {/* Benefits Grid */}
