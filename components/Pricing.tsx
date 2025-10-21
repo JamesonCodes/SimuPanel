@@ -6,13 +6,8 @@ import { pricingTiers } from '@/lib/pricing';
 
 const Pricing = () => {
   const handleCtaClick = (tierId: string) => {
-    if (tierId === 'agency') {
-      // For agency tier, show contact form or email
-      window.location.href = 'mailto:sales@simupanel.com?subject=Agency Pack Inquiry';
-    } else {
-      // For other tiers, scroll to a contact form or show coming soon
-      alert('Payment integration coming soon! Contact us at hello@simupanel.com');
-    }
+    // For all tiers, show coming soon message
+    alert('Payment integration coming soon! Contact us at hello@simupanel.com');
   };
 
   return (
@@ -26,10 +21,10 @@ const Pricing = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Simple, transparent pricing
+            Simple, one-click pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Pay only for the insights you need. No subscriptions, no freemium limits.
+            No accounts, no subscriptions, no waiting — just pay per test.
           </p>
         </motion.div>
 
@@ -114,42 +109,22 @@ const Pricing = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center bg-white rounded-lg p-8 border border-gray-200 shadow-sm"
+          className="text-center"
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            No subscriptions. No freemium limits.
-          </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Just fast, validated consumer simulation on demand. Start with a single test and scale as you need.
+          <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+            No subscriptions. No upsells. No catch.<br />
+            Pay only when you need insights — fast, validated, and on demand.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => handleCtaClick('single')}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
-            >
-              Start with Single Test ($9)
-              <ArrowRight className="w-4 h-4" />
-            </button>
-            <button className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors">
-              View Pricing Details
-            </button>
-          </div>
-        </motion.div>
-
-        {/* FAQ Link */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <p className="text-gray-600 mb-4">
-            Questions about pricing or need a custom plan?
-          </p>
-          <button className="text-blue-600 hover:text-blue-700 font-medium transition-colors">
-            Contact our sales team →
+          <button
+            onClick={() => handleCtaClick('single')}
+            className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto"
+          >
+            Start with a Single Test ($9) →
+            <ArrowRight className="w-5 h-5" />
           </button>
+          <p className="text-sm text-gray-500 mt-4">
+            Payments handled securely by Stripe. No account required.
+          </p>
         </motion.div>
       </div>
     </section>

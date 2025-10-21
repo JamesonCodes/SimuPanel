@@ -13,45 +13,46 @@ export interface PricingTier {
 export const pricingTiers: PricingTier[] = [
   {
     id: 'single',
-    name: 'Single Test',
+    name: '🧪 Single Test',
     price: 9,
-    description: 'For quick validation.',
+    description: 'Run one simulation with 100 synthetic responses. Perfect for quick validation or product testing.',
     features: [
-      '100 responses',
-      'Likert + rationales',
+      '100 synthetic responses',
+      'Likert distribution + rationales',
       'PDF export',
-      'Persona controls'
+      'Basic persona controls'
     ],
-    cta: 'Run Test',
+    cta: 'Run Test →',
   },
   {
     id: 'pack5',
-    name: '5 Tests',
+    name: '⚙️ 5-Pack',
     price: 35,
     originalPrice: 45,
-    description: 'For small teams testing multiple ideas.',
+    description: 'Run five simulations. Best for testing multiple concepts or campaigns.',
     features: [
-      'Priority compute',
+      '5 simulations total',
+      'Priority processing',
       'CSV + PDF exports',
       'Email support'
     ],
-    cta: 'Buy 5-Pack',
+    cta: 'Buy 5-Pack →',
     popular: true,
-    badge: 'Most Popular'
+    badge: 'Save $10'
   },
   {
-    id: 'agency',
-    name: 'Agency Pack',
+    id: 'pack20',
+    name: '🚀 20-Pack',
     price: 99,
     originalPrice: 140,
-    description: 'For agencies and research teams.',
+    description: 'Run twenty simulations. Ideal for teams or researchers running frequent tests.',
     features: [
-      '20 sims',
+      '20 simulations total',
       'Full persona customization',
       'API access',
       'Priority support'
     ],
-    cta: 'Contact Sales',
+    cta: 'Buy 20-Pack →',
   }
 ];
 
