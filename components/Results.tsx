@@ -42,7 +42,7 @@ const Results = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left side - Data Visualization */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -96,9 +96,9 @@ const Results = () => {
             </div>
 
             {/* Runtime */}
-            <div className="flex items-center gap-3 text-gray-600">
-              <Clock className="w-5 h-5" />
-              <span className="text-sm">Runtime: ≈ 52 seconds per simulation</span>
+            <div className="flex items-center gap-3 text-gray-400">
+              <Clock className="w-4 h-4" />
+              <span className="text-xs">Runtime: ≈ 52 seconds per simulation</span>
             </div>
           </motion.div>
 
@@ -112,7 +112,7 @@ const Results = () => {
           >
             <h3 className="text-xl font-semibold text-gray-900 mb-6">Sample Synthetic Feedback</h3>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               {sampleFeedback.map((feedback, index) => (
                 <motion.div
                   key={index}
@@ -120,34 +120,34 @@ const Results = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-200"
+                  className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
                 >
                   <div className="flex items-start gap-3">
-                    <Quote className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-                    <p className="text-gray-700 italic">"{feedback}"</p>
+                    <Quote className="w-4 h-4 text-gray-400 mt-1 flex-shrink-0" />
+                    <p className="text-gray-700 italic text-sm">"{feedback}"</p>
                   </div>
                 </motion.div>
               ))}
             </div>
 
             {/* Additional Insights */}
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h4 className="font-semibold text-gray-900 mb-3">What You Get</h4>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+            <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+              <h4 className="font-semibold text-gray-900 mb-4">What You Get</h4>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
                   Complete Likert distribution with statistical significance
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
                   Qualitative insights explaining purchase decisions
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
                   Demographic breakdown by persona
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
                   Exportable data for further analysis
                 </li>
               </ul>
