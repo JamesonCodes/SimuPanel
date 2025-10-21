@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -97,20 +97,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <button
-          onClick={() => scrollToSection('how-it-works')}
-          className="text-gray-400 hover:text-gray-600 transition-colors animate-bounce"
-        >
-          <ChevronDown className="w-5 h-5" />
-        </button>
-      </motion.div>
     </section>
   );
 };
