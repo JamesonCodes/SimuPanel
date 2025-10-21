@@ -13,20 +13,22 @@ const FinalCTA = () => {
 
   const benefits = [
     'Get results in minutes, not months',
-    '90% accuracy of human focus groups',
-    'No recruiting or scheduling needed',
-    'Scientific methodology you can trust'
+    '90% of human focus-group accuracy',
+    'No recruiting, scheduling, or surveys needed',
+    'Backed by peer-reviewed science'
   ];
 
   return (
-    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-40">
+      <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           backgroundRepeat: 'repeat'
         }}></div>
       </div>
+      {/* Subtle gradient overlay for visual closure */}
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -37,12 +39,12 @@ const FinalCTA = () => {
           className="text-center"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Make data-driven product decisions in{' '}
+            Make confident, data-backed decisions — in{' '}
             <span className="text-blue-400">minutes</span>, not months.
           </h2>
           
-          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Run your first synthetic consumer test today — powered by validated AI and peer-reviewed methodology.
+          <p className="text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
+            SimuPanel uses validated AI and peer-reviewed science to mirror real consumer behavior — instantly.
           </p>
 
           {/* Benefits Grid */}
@@ -81,7 +83,7 @@ const FinalCTA = () => {
               onClick={() => scrollToSection('how-it-works')}
               className="group text-gray-300 hover:text-white px-6 py-4 text-lg font-medium transition-colors flex items-center gap-2"
             >
-              See How It Works
+              Learn How It Works
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
@@ -95,12 +97,15 @@ const FinalCTA = () => {
             className="mt-16 pt-8 border-t border-gray-700"
           >
             <p className="text-sm text-gray-400 mb-6">
-              Trusted by researchers and validated by science
+              Trusted by researchers. Validated by science.
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
               <div className="text-sm font-medium text-gray-300">PyMC Labs</div>
+              <div className="text-gray-500">•</div>
               <div className="text-sm font-medium text-gray-300">Colgate-Palmolive</div>
+              <div className="text-gray-500">•</div>
               <div className="text-sm font-medium text-gray-300">Enterprise Research Teams</div>
+              <div className="text-gray-500">•</div>
               <div className="text-sm font-medium text-gray-300">Academic Institutions</div>
             </div>
           </motion.div>
