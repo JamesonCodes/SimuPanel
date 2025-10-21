@@ -37,17 +37,20 @@ const HowItWorks = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get realistic consumer data in three simple steps — no recruiting, no waiting, no hassle.
+            Get statistically representative consumer data in three simple steps — no recruiting, no panels, no waiting.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-12 mb-16 relative">
+          {/* Connecting Line */}
+          <div className="hidden lg:block absolute top-16 left-1/3 right-1/3 h-0.5 bg-gray-200 z-0"></div>
+          
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -55,18 +58,14 @@ const HowItWorks = () => {
                 key={step.number}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="relative"
               >
-                {/* Connection Line */}
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-gray-300 to-transparent transform translate-x-4 z-0"></div>
-                )}
 
                 <div className="relative bg-white rounded-lg p-8 shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200 z-10">
                   {/* Step Number */}
-                  <div className="absolute -top-4 -left-4 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <div className="absolute -top-4 -left-4 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-medium">
                     {step.number}
                   </div>
 
@@ -79,13 +78,14 @@ const HowItWorks = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed mb-3">
+                  <p className="text-gray-600 leading-relaxed mb-4">
                     {step.description}
                   </p>
                   {step.output && (
-                    <p className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-2 rounded-lg">
-                      {step.output}
-                    </p>
+                    <div className="flex items-center gap-2 text-xs font-medium text-blue-600 bg-blue-50 px-4 py-3 rounded-lg">
+                      <span>⚡</span>
+                      <span>{step.output}</span>
+                    </div>
                   )}
                 </div>
               </motion.div>
