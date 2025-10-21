@@ -102,7 +102,7 @@ const Pricing = () => {
             onClick={() => handleCtaClick('single')}
             className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto"
           >
-            Start with a Single Test ($9) →
+            Start with a Single Test ($9)
             <ArrowRight className="w-5 h-5" />
           </button>
           <p className="text-sm text-gray-500 mt-4">
