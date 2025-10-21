@@ -59,22 +59,30 @@ export const pricingTiers: PricingTier[] = [
 export const faqData = [
   {
     question: "How accurate are the results?",
-    answer: "The underlying SSR method achieves ~90% of human test–retest reliability on real consumer data, validated across 9,000 survey participants."
+    answer: "The underlying SSR methodology achieves approximately 90% of human test–retest reliability on validated consumer datasets, benchmarked across 9,000 survey participants. This gives you the realism of human focus-group data, without the cost or waiting."
   },
   {
     question: "What models power it?",
-    answer: "GPT-4o for response generation and OpenAI's text-embedding-3-small for semantic similarity mapping."
+    answer: "SimuPanel uses GPT-4o for natural, persona-specific responses and OpenAI's text-embedding-3-small for semantic similarity scoring — the same technique used in peer-reviewed research published by PyMC Labs and Colgate-Palmolive."
   },
   {
-    question: "Can I upload images?",
-    answer: "Yes — product mockups are automatically captioned and incorporated into the analysis."
+    question: "Can I upload images or mockups?",
+    answer: "Yes. Upload product visuals or packaging mockups — SimuPanel automatically captions and integrates them into the simulation context."
   },
   {
-    question: "How long does it take?",
-    answer: "Most simulations finish in under a minute, typically around 52 seconds per simulation."
+    question: "How long does a test take?",
+    answer: "Most simulations complete in under 60 seconds. Larger multi-test batches may take a few minutes, but every result is generated in real time."
   },
   {
     question: "What data do you store?",
-    answer: "Only anonymized concepts and aggregate distributions for benchmarking. We don't store personal information."
+    answer: "Only anonymized concept text and aggregated response distributions for benchmarking. We don't store personal information, uploaded files, or customer content beyond your active session."
+  },
+  {
+    question: "Can I use it for any industry?",
+    answer: "Yes. The model adapts to consumer language across categories — from CPG to SaaS to apparel. Results are context-aware and calibrated to your chosen persona."
+  },
+  {
+    question: "Do I need any technical setup?",
+    answer: "No. Just paste your concept or upload a mockup, select a persona, and click Run Test. Everything happens automatically in the background."
   }
 ];

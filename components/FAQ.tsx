@@ -12,9 +12,9 @@ const FAQ = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Show first 3 FAQs expanded by default
+  // Show only the clicked FAQ as expanded
   const shouldShowExpanded = (index: number) => {
-    return index < 3 || openIndex === index;
+    return openIndex === index;
   };
 
   return (
@@ -31,7 +31,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to know about SimuPanel and how it works.
+            Everything you need to know about how SimuPanel works — and why it's different.
           </p>
         </motion.div>
 
@@ -92,8 +92,11 @@ const FAQ = () => {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-lg font-semibold text-gray-900">
+          <p className="text-lg font-semibold text-gray-900 mb-3">
             SimuPanel doesn't guess — it measures.
+          </p>
+          <p className="text-lg text-gray-600">
+            Get your first validated consumer insights today.
           </p>
         </motion.div>
 
