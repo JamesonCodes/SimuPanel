@@ -12,38 +12,23 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          backgroundRepeat: 'repeat'
-        }}></div>
-      </div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 overflow-hidden pt-20">
+      {/* Subtle depth background */}
+      <div className="absolute inset-0 bg-gradient-radial from-transparent via-gray-50/30 to-transparent"></div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="space-y-8"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="space-y-12"
         >
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium border border-blue-200"
-          >
-            🧩 AI-Powered Consumer Concept Testing
-          </motion.div>
-
           {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+            transition={{ delay: 0.2, duration: 0.8 }}
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight"
           >
             Validate your product ideas{' '}
             <span className="gradient-text">overnight</span>
@@ -52,37 +37,42 @@ const Hero = () => {
           </motion.h1>
 
           {/* Subheadline */}
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="space-y-3"
           >
-            SimuPanel replicates real consumer purchase intent with{' '}
-            <span className="font-semibold text-gray-900">90% of the accuracy</span> of live focus groups — no surveys, no panels, no delays.
-          </motion.p>
+            <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Get human-level purchase intent data in minutes, powered by peer-reviewed AI that replicates real focus groups with{' '}
+              <span className="font-semibold text-gray-900">90% accuracy</span>.
+            </p>
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
+              No surveys. No panels. No delays.
+            </p>
+          </motion.div>
 
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-4"
           >
             <button
               onClick={() => scrollToSection('pricing')}
-              className="group bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="group bg-blue-700 text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-blue-800 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Run a Simulation ($9)
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             
             <button
-              onClick={() => scrollToSection('how-it-works')}
-              className="group text-gray-600 hover:text-gray-900 px-6 py-4 text-lg font-medium transition-colors flex items-center gap-2"
+              onClick={() => scrollToSection('results')}
+              className="group text-gray-600 hover:text-gray-900 px-8 py-4 text-lg font-medium transition-all duration-200 flex items-center gap-2 border border-gray-300 rounded-xl hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-md"
             >
-              See How It Works
-              <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+              View Example Results
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
 
@@ -90,14 +80,18 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.8 }}
-            className="pt-6"
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className="pt-12"
           >
-            <p className="text-sm text-gray-500 mb-4">Trusted by researchers at</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <div className="text-sm font-medium text-gray-400">PyMC Labs</div>
-              <div className="text-sm font-medium text-gray-400">Colgate-Palmolive</div>
-              <div className="text-sm font-medium text-gray-400">Enterprise Research Teams</div>
+            <div className="border-t border-gray-200 pt-8">
+              <p className="text-sm text-gray-500 mb-4">Trusted by researchers at</p>
+              <div className="flex flex-wrap justify-center items-center gap-8 text-gray-400">
+                <div className="text-sm font-medium">PyMC Labs</div>
+                <div className="text-gray-300">•</div>
+                <div className="text-sm font-medium">Colgate-Palmolive</div>
+                <div className="text-gray-300">•</div>
+                <div className="text-sm font-medium">Enterprise Research Teams</div>
+              </div>
             </div>
           </motion.div>
         </motion.div>
@@ -107,14 +101,14 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.5 }}
+        transition={{ delay: 1.2, duration: 0.5 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <button
           onClick={() => scrollToSection('how-it-works')}
           className="text-gray-400 hover:text-gray-600 transition-colors animate-bounce"
         >
-          <ChevronDown className="w-6 h-6" />
+          <ChevronDown className="w-5 h-5" />
         </button>
       </motion.div>
     </section>
