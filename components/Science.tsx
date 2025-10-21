@@ -6,29 +6,29 @@ import { CheckCircle, BarChart3, BookOpen } from 'lucide-react';
 const Science = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Science, Not Hype
           </h2>
-          <p className="text-lg text-gray-600 mb-4">
-            Built on research that's actually been published.
-          </p>
-          <p className="text-lg font-semibold text-gray-900 mb-6">
-            Not "AI magic" — a peer-reviewed methodology.
+          <p className="text-lg text-gray-500 mb-4">
+            Built on research that's actually been published — not "AI magic."
           </p>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            SimuPanel is powered by <span className="font-semibold text-gray-900">Semantic Similarity Rating (SSR)</span> — developed by PyMC Labs and Colgate-Palmolive in 2025.
+            Powered by <span className="font-semibold text-gray-900">Semantic Similarity Rating (SSR)</span>, a peer-reviewed method developed by PyMC Labs and Colgate-Palmolive in 2025.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative">
+          {/* Subtle connective background */}
+          <div className="absolute inset-0 bg-blue-50/20 rounded-2xl -m-4"></div>
+          <div className="relative grid lg:grid-cols-2 gap-12 items-center p-8">
           {/* Left side - Methodology */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -43,7 +43,7 @@ const Science = () => {
                 SSR Methodology
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                SSR enables large language models to reproduce human purchase-intent ratings by analyzing free-text responses and mapping them onto a 5-point Likert scale with statistical precision.
+                SSR allows large language models to replicate human purchase-intent ratings by analyzing open-ended responses and mapping them to a 5-point Likert scale — with proven statistical precision.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ const Science = () => {
             className="space-y-8"
           >
             {/* Accuracy Stat */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 border border-blue-200">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
               <div className="text-center">
                 <div className="text-4xl font-bold text-blue-700 mb-2">≈ 90%</div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">of human test–retest reliability</div>
@@ -90,7 +90,7 @@ const Science = () => {
             </div>
 
             {/* Citation */}
-            <div className="bg-gray-900 text-white rounded-lg p-6">
+            <div className="bg-gray-900 text-white rounded-lg p-6 border border-gray-700">
               <div className="flex items-start gap-3 mb-4">
                 <BarChart3 className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <h4 className="font-semibold">Research Citation</h4>
@@ -99,22 +99,25 @@ const Science = () => {
                 "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings"
               </blockquote>
               <cite className="text-xs text-gray-400 block mt-3">
-                Maier et al., 2025
+                — Maier et al., 2025
               </cite>
             </div>
 
-            {/* Trust Building Elements */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-                <div className="text-2xl font-bold text-gray-900">9,000+</div>
-                <div className="text-sm text-gray-600">Participants</div>
-              </div>
-              <div className="text-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-                <div className="text-2xl font-bold text-gray-900">2025</div>
-                <div className="text-sm text-gray-600">Published</div>
+            {/* Supporting Metrics */}
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-gray-900 mb-1">9,000+</div>
+                  <div className="text-sm text-gray-600">Participants</div>
+                </div>
+                <div className="text-center border-l border-gray-200 pl-6">
+                  <div className="text-2xl font-bold text-gray-900 mb-1">2025</div>
+                  <div className="text-sm text-gray-600">Published</div>
+                </div>
               </div>
             </div>
           </motion.div>
+          </div>
         </div>
       </div>
     </section>
