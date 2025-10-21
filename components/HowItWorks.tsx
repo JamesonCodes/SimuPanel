@@ -99,20 +99,21 @@ const HowItWorks = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="text-center bg-white rounded-lg p-8 border border-gray-200 shadow-sm"
+          className="text-center bg-white rounded-lg p-8 border border-gray-200 shadow-sm max-w-4xl mx-auto"
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Consumer data, without consumers.
           </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
             Get the insights you need in minutes, not weeks. No need to find participants, schedule sessions, or wait for results.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
               Try It Now
               <ArrowRight className="w-4 h-4" />
             </button>
-            <button className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors">
+            <div className="text-gray-300">|</div>
+            <button className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors border-b border-transparent hover:border-gray-400">
               Learn More About SSR
             </button>
           </div>
