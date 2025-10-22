@@ -1,13 +1,18 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Check, Star, ArrowRight } from 'lucide-react';
 import { pricingTiers } from '@/lib/pricing';
+import WaitlistModal from './WaitlistModal';
 
 const Pricing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedTier, setSelectedTier] = useState<string>('');
+
   const handleCtaClick = (tierId: string) => {
-    // For all tiers, show coming soon message
-    alert('Payment integration coming soon! Contact us at hello@simupanel.com');
+    setSelectedTier(tierId);
+    setIsModalOpen(true);
   };
 
   return (
@@ -21,10 +26,10 @@ const Pricing = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Simple, one-click pricing
+            Coming Soon: Simple, one-click pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            No accounts, no subscriptions, no waiting — just pay per test.
+            Join our waitlist to be the first to access SimuPanel when we launch.
           </p>
         </motion.div>
 
@@ -77,9 +82,9 @@ const Pricing = () => {
               {/* CTA Button */}
               <button
                 onClick={() => handleCtaClick(tier.id)}
-                className="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 bg-gray-900 text-white hover:bg-gray-800"
+                className="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 bg-blue-600 text-white hover:bg-blue-700"
               >
-                {tier.cta}
+                Join Waitlist
                 <ArrowRight className="w-4 h-4" />
               </button>
             </motion.div>
@@ -95,21 +100,28 @@ const Pricing = () => {
           className="text-center"
         >
           <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-            No subscriptions. No upsells. No catch.<br />
-            Pay only when you need insights — fast, validated, and on demand.
+            Be the first to know when SimuPanel launches.<br />
+            Join our waitlist for early access and exclusive pricing.
           </p>
           <button
             onClick={() => handleCtaClick('single')}
             className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto"
           >
-            Start with a Single Test ($9)
+            Join the Waitlist
             <ArrowRight className="w-5 h-5" />
           </button>
           <p className="text-sm text-gray-500 mt-4">
-            Payments handled securely by Stripe. No account required.
+            No spam. Unsubscribe anytime.
           </p>
         </motion.div>
       </div>
+
+      {/* Waitlist Modal */}
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        selectedTier={selectedTier}
+      />
     </section>
   );
 };

@@ -1,14 +1,22 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import WaitlistModal from './WaitlistModal';
 
 const FinalCTA = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleWaitlistClick = () => {
+    setIsModalOpen(true);
   };
 
   const benefits = [
@@ -72,10 +80,10 @@ const FinalCTA = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <button
-              onClick={() => scrollToSection('pricing')}
+              onClick={handleWaitlistClick}
               className="group bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              Run a Simulation ($9)
+              Join the Waitlist
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             
@@ -111,6 +119,13 @@ const FinalCTA = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Waitlist Modal */}
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        selectedTier="general"
+      />
     </section>
   );
 };

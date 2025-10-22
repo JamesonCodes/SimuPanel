@@ -22,7 +22,7 @@ export const pricingTiers: PricingTier[] = [
       'PDF export',
       'Basic persona controls'
     ],
-    cta: 'Run Test',
+    cta: 'Join Waitlist',
   },
   {
     id: 'pack5',
@@ -36,7 +36,7 @@ export const pricingTiers: PricingTier[] = [
       'CSV + PDF exports',
       'Email support'
     ],
-    cta: 'Buy 5-Pack'
+    cta: 'Join Waitlist'
   },
   {
     id: 'pack20',
@@ -50,7 +50,7 @@ export const pricingTiers: PricingTier[] = [
       'API access',
       'Priority support'
     ],
-    cta: 'Buy 20-Pack',
+    cta: 'Join Waitlist',
   }
 ];
 
