@@ -45,7 +45,8 @@ export async function POST(request: NextRequest) {
 
     // Send welcome email using Resend
     const { error } = await resend.emails.send({
-      from: 'SimuPanel <welcome@resend.dev>', // You'll need to verify your domain
+      from: 'SimuPanel <welcome@resend.dev>', // Keep this as is - it works
+      replyTo: process.env.REPLY_TO_EMAIL || 'jameson.campbell.me@gmail.com', // Use env var with fallback
       to: [email],
       subject: `Welcome to SimuPanel - You're on the list! 🧪`,
       html: `
