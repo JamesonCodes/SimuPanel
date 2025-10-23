@@ -77,7 +77,7 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -113,8 +113,7 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
                     Join the Waitlist
                   </h2>
                   <p className="text-gray-600">
-                    Be the first to know when {tierInfo.name} launches
-                    {tierInfo.price !== 'Early Access' && ` at ${tierInfo.price}`}
+                    Be the first to know when SimuPanel launches
                   </p>
                 </div>
 

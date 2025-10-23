@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import WaitlistModal from './WaitlistModal';
+import { createPortal } from 'react-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,10 +70,10 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <button
-              onClick={() => scrollToSection('pricing')}
+              onClick={() => setIsModalOpen(true)}
               className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
             >
-              Run Simulation ($9)
+              Join Waitlist
             </button>
           </div>
 
@@ -99,15 +102,25 @@ const Navigation = () => {
                 </button>
               ))}
               <button
-                onClick={() => scrollToSection('pricing')}
+                onClick={() => setIsModalOpen(true)}
                 className="bg-blue-600 text-white px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-700 transition-colors w-full mt-4"
               >
-                Run Simulation ($9)
+                Join Waitlist
               </button>
             </div>
           </div>
         )}
       </div>
+
+      {/* Waitlist Modal - Rendered via Portal */}
+      {typeof window !== 'undefined' && createPortal(
+        <WaitlistModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          selectedTier="general"
+        />,
+        document.body
+      )}
     </nav>
   );
 };

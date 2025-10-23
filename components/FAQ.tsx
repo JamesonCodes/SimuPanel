@@ -4,9 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { faqData } from '@/lib/pricing';
+import WaitlistModal from './WaitlistModal';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -98,13 +100,23 @@ const FAQ = () => {
           <p className="text-lg text-gray-600 mb-6">
             Get your first validated insights today.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto">
-            Run a Simulation ($9)
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto"
+          >
+            Join the Waitlist
             <ArrowRight className="w-4 h-4" />
           </button>
         </motion.div>
 
       </div>
+
+      {/* Waitlist Modal */}
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        selectedTier="general"
+      />
     </section>
   );
 };

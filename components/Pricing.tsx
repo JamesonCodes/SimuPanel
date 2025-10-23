@@ -79,14 +79,6 @@ const Pricing = () => {
                 ))}
               </div>
 
-              {/* CTA Button */}
-              <button
-                onClick={() => handleCtaClick(tier.id)}
-                className="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 bg-blue-600 text-white hover:bg-blue-700"
-              >
-                Join Waitlist
-                <ArrowRight className="w-4 h-4" />
-              </button>
             </motion.div>
           ))}
         </div>

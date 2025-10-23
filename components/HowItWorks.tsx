@@ -4,6 +4,13 @@ import { motion } from 'framer-motion';
 import { FileText, Users, BarChart3, ArrowRight } from 'lucide-react';
 
 const HowItWorks = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const steps = [
     {
       number: '01',
@@ -107,13 +114,11 @@ const HowItWorks = () => {
           <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
             Get the insights you need in minutes, not weeks. No need to find participants, schedule sessions, or wait for results.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
-              Try It Now
-              <ArrowRight className="w-4 h-4" />
-            </button>
-            <div className="text-gray-300">|</div>
-            <button className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors border-b border-transparent hover:border-gray-400">
+          <div className="flex justify-center">
+            <button 
+              onClick={() => scrollToSection('science')}
+              className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors border-b border-transparent hover:border-gray-400"
+            >
               Learn More About SSR
             </button>
           </div>
