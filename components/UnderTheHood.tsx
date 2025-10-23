@@ -159,9 +159,9 @@ const UnderTheHood = () => {
               <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-500/30 transition-colors duration-300">
                 <CheckCircle className="w-8 h-8 text-purple-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Trustworthy</h3>
+              <h3 className="text-lg font-semibold mb-2">Responsible</h3>
               <p className="text-gray-300 text-sm">
-                SOC 2-compliant data privacy and enterprise-grade security.
+                Built and tested with strict data-privacy and ethical-AI practices — no personal data collection, ever.
               </p>
             </div>
           </div>
