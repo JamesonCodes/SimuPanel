@@ -38,7 +38,7 @@ const Results = () => {
             Know not just what consumers think — but why.
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Every simulation returns a complete Likert distribution plus the "why" behind the ratings.
+            Every simulation returns a complete Likert distribution plus the &ldquo;why&rdquo; behind the ratings.
           </p>
         </motion.div>
 
@@ -126,7 +126,7 @@ const Results = () => {
                 >
                   <div className="flex items-start gap-3">
                     <Quote className="w-4 h-4 text-gray-400 mt-1 flex-shrink-0" />
-                    <p className="text-gray-700 italic text-sm">"{feedback}"</p>
+                    <p className="text-gray-700 italic text-sm">&ldquo;{feedback}&rdquo;</p>
                   </div>
                 </motion.div>
               ))}

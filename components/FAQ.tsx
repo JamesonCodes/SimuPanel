@@ -33,7 +33,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to know about how SimuPanel works — and why it's different.
+            Everything you need to know about how SimuPanel works — and why it&apos;s different.
           </p>
         </motion.div>
 
@@ -95,7 +95,7 @@ const FAQ = () => {
           className="mt-12 text-center"
         >
           <p className="text-lg font-semibold text-gray-900 mb-3">
-            SimuPanel doesn't guess — it measures.
+            SimuPanel doesn&apos;t guess — it measures.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Get your first validated insights today.

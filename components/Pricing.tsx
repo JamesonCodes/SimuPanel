@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Check, Star, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { pricingTiers } from '@/lib/pricing';
 import WaitlistModal from './WaitlistModal';
 
