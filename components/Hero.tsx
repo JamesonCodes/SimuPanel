@@ -55,7 +55,7 @@ const Hero = () => {
               Get human-level purchase intent data in minutes, powered by peer-reviewed AI that replicates real focus groups with{' '}
               <span className="font-semibold text-gray-900">90% accuracy</span>.
             </p>
-            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
+            <p className="text-base text-gray-400 font-medium max-w-3xl mx-auto">
               No surveys. No panels. No delays.
             </p>
           </motion.div>
