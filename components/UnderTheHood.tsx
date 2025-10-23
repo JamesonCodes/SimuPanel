@@ -60,7 +60,7 @@ const UnderTheHood = () => {
             Under the Hood
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The process behind every simulation — for teams who care how the data's made, not just what it says.
+            The process behind every simulation — for teams who care how the data&apos;s made, not just what it says.
           </p>
         </motion.div>
 

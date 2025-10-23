@@ -161,7 +161,7 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
 
                 {/* Benefits */}
                 <div className="mt-8 pt-6 border-t border-gray-200">
-                  <h3 className="text-sm font-medium text-gray-900 mb-3">What you'll get:</h3>
+                  <h3 className="text-sm font-medium text-gray-900 mb-3">What you&apos;ll get:</h3>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
@@ -212,10 +212,10 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
                   <CheckCircle className="w-8 h-8 text-green-600" />
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  You're on the list!
+                  You&apos;re on the list!
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  We'll notify you as soon as {tierInfo.name} is available.
+                  We&apos;ll notify you as soon as {tierInfo.name} is available.
                 </p>
                 <button
                   onClick={handleClose}

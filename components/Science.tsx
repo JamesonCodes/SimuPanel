@@ -18,7 +18,7 @@ const Science = () => {
             Science, Not Hype
           </h2>
           <p className="text-lg text-gray-500 mb-4">
-            Built on research that's actually been published — not "AI magic."
+            Built on research that&apos;s actually been published — not &ldquo;AI magic.&rdquo;
           </p>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Powered by <span className="font-semibold text-gray-900">Semantic Similarity Rating (SSR)</span>, a peer-reviewed method developed by PyMC Labs and Colgate-Palmolive in 2025.
@@ -96,7 +96,7 @@ const Science = () => {
                 <h4 className="font-semibold">Research Citation</h4>
               </div>
               <blockquote className="text-sm leading-relaxed text-gray-300 italic">
-                "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings."
+                &ldquo;LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings.&rdquo;
               </blockquote>
               <cite className="text-xs text-gray-400 block mt-3">
                 Maier et al., 2025 — Published October 9 2025.
