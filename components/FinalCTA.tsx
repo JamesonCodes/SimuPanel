@@ -104,18 +104,9 @@ const FinalCTA = () => {
             viewport={{ once: true }}
             className="mt-16 pt-8 border-t border-gray-700"
           >
-            <p className="text-sm text-gray-400 mb-6">
-              Trusted by researchers. Validated by science.
+            <p className="text-sm text-gray-400 text-center">
+              Backed by peer-reviewed research — powered by Semantic Similarity Rating (SSR).
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
-              <div className="text-sm font-medium text-gray-300">PyMC Labs</div>
-              <div className="text-gray-500">•</div>
-              <div className="text-sm font-medium text-gray-300">Colgate-Palmolive</div>
-              <div className="text-gray-500">•</div>
-              <div className="text-sm font-medium text-gray-300">Enterprise Research Teams</div>
-              <div className="text-gray-500">•</div>
-              <div className="text-sm font-medium text-gray-300">Academic Institutions</div>
-            </div>
           </motion.div>
         </motion.div>
       </div>

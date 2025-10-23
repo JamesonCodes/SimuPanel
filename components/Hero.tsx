@@ -84,24 +84,6 @@ const Hero = () => {
             </button>
           </motion.div>
 
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            className="pt-12"
-          >
-            <div className="border-t border-gray-200 pt-8">
-              <p className="text-sm text-gray-500 mb-4">Trusted by researchers at</p>
-              <div className="flex flex-wrap justify-center items-center gap-8 text-gray-400">
-                <div className="text-sm font-medium">PyMC Labs</div>
-                <div className="text-gray-300">•</div>
-                <div className="text-sm font-medium">Colgate-Palmolive</div>
-                <div className="text-gray-300">•</div>
-                <div className="text-sm font-medium">Enterprise Research Teams</div>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
 
