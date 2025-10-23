@@ -107,6 +107,14 @@ const FinalCTA = () => {
             <p className="text-sm text-gray-400 text-center">
               Backed by peer-reviewed research — powered by Semantic Similarity Rating (SSR).
             </p>
+            <div className="mt-4 flex justify-center gap-6 text-xs text-gray-500">
+              <a href="/privacy" className="hover:text-gray-300 transition-colors">
+                Privacy Policy
+              </a>
+              <a href="/terms" className="hover:text-gray-300 transition-colors">
+                Terms of Service
+              </a>
+            </div>
           </motion.div>
         </motion.div>
       </div>

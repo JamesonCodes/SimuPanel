@@ -180,6 +180,21 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
                       No spam, unsubscribe anytime
                     </li>
                   </ul>
+                  
+                  {/* Privacy Policy Link */}
+                  <div className="mt-4 pt-4 border-t border-gray-100">
+                    <p className="text-xs text-gray-500 text-center">
+                      By joining, you agree to our{' '}
+                      <a 
+                        href="/privacy" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-700 underline"
+                      >
+                        Privacy Policy
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             ) : (
