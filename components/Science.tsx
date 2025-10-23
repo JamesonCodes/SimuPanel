@@ -101,6 +101,17 @@ const Science = () => {
               <cite className="text-xs text-gray-400 block mt-3">
                 Maier et al., 2025 — Published October 9 2025.
               </cite>
+              <div className="mt-4">
+                <a 
+                  href="https://arxiv.org/pdf/2510.08338v1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  Read the full research paper
+                </a>
+              </div>
             </div>
 
             {/* Supporting Metrics */}
