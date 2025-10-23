@@ -96,10 +96,10 @@ const Science = () => {
                 <h4 className="font-semibold">Research Citation</h4>
               </div>
               <blockquote className="text-sm leading-relaxed text-gray-300 italic">
-                "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings"
+                "LLMs Reproduce Human Purchase Intent via Semantic Similarity Elicitation of Likert Ratings."
               </blockquote>
               <cite className="text-xs text-gray-400 block mt-3">
-                — Maier et al., 2025
+                Maier et al., 2025 — Published October 9 2025.
               </cite>
             </div>
 
