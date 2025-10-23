@@ -181,7 +181,7 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
                     </li>
                   </ul>
                   
-                  {/* Privacy Policy Link */}
+                  {/* Legal Links */}
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <p className="text-xs text-gray-500 text-center">
                       By joining, you agree to our{' '}
@@ -192,6 +192,15 @@ const WaitlistModal = ({ isOpen, onClose, selectedTier }: WaitlistModalProps) =>
                         className="text-blue-600 hover:text-blue-700 underline"
                       >
                         Privacy Policy
+                      </a>
+                      {' '}and{' '}
+                      <a 
+                        href="/terms" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-700 underline"
+                      >
+                        Terms of Service
                       </a>
                     </p>
                   </div>
