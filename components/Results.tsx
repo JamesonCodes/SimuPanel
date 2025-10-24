@@ -14,11 +14,11 @@ const Results = () => {
   ];
 
   const sampleFeedback = [
-    "I'd probably try this — especially if it's affordable.",
-    "The eco-friendly angle appeals to me.",
-    "Sounds innovative, but I'd want proof of effectiveness.",
-    "This could solve a real problem I have.",
-    "Not sure if it's worth the price point."
+    'I\'d probably try this — especially if it\'s affordable.',
+    'The eco-friendly angle appeals to me.',
+    'Sounds innovative, but I\'d want proof of effectiveness.',
+    'This could solve a real problem I have.',
+    'Not sure if it\'s worth the price point.'
   ];
 
   return (

@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed">
-              SearchWell Labs LLC ("we," "our," or "us") operates the SimuPanel website and service. 
+              SearchWell Labs LLC (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) operates the SimuPanel website and service. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
               when you visit our website or use our services.
             </p>
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
             
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.1 Information You Provide</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>Email Address:</strong> When you join our waitlist, we collect your email address to send you updates about SimuPanel's launch and development progress.</li>
+              <li><strong>Email Address:</strong> When you join our waitlist, we collect your email address to send you updates about SimuPanel&apos;s launch and development progress.</li>
               <li><strong>Communication:</strong> Any information you provide when contacting us directly.</li>
             </ul>
 
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. How We Use Your Information</h2>
             <p className="text-gray-700 leading-relaxed">We use the information we collect to:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Send you updates about SimuPanel's development and launch</li>
+              <li>Send you updates about SimuPanel&apos;s development and launch</li>
               <li>Provide customer support and respond to your inquiries</li>
               <li>Improve our website and services</li>
               <li>Analyze usage patterns and optimize user experience</li>
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">7. Third-Party Services</h2>
             <p className="text-gray-700 leading-relaxed">Our website may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.</p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">8. Children's Privacy</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">8. Children&apos;s Privacy</h2>
             <p className="text-gray-700 leading-relaxed">
               Our services are not directed to children under 13 years of age. We do not knowingly collect 
               personal information from children under 13. If you are a parent or guardian and believe your 
@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">10. Changes to This Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed">
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting 
-              the new Privacy Policy on this page and updating the "Last Updated" date. Your continued use of our 
+              the new Privacy Policy on this page and updating the &ldquo;Last Updated&rdquo; date. Your continued use of our 
               services after any modifications constitutes acceptance of the updated Privacy Policy.
             </p>
 

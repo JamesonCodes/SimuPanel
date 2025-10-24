@@ -20,8 +20,8 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              By accessing or using SimuPanel ("Service"), operated by SearchWell Labs LLC ("Company," "we," "our," or "us"), 
-              you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, 
+              By accessing or using SimuPanel (&ldquo;Service&rdquo;), operated by SearchWell Labs LLC (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;), 
+              you agree to be bound by these Terms of Service (&ldquo;Terms&rdquo;). If you do not agree to these Terms, 
               please do not use our Service.
             </p>
 
@@ -67,7 +67,7 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">7. Disclaimers and Limitations of Liability</h2>
             <p className="text-gray-700 leading-relaxed">
-              THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS 
+              THE SERVICE IS PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS 
               OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
               PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
             </p>
@@ -81,7 +81,7 @@ export default function TermsOfService() {
             <p className="text-gray-700 leading-relaxed">
               You agree to defend, indemnify, and hold harmless SearchWell Labs LLC and its officers, directors, 
               employees, and agents from and against any claims, damages, obligations, losses, liabilities, costs, 
-              or debt, and expenses (including attorney's fees) arising from your use of the Service or violation 
+              or debt, and expenses (including attorney&apos;s fees) arising from your use of the Service or violation 
               of these Terms.
             </p>
 
