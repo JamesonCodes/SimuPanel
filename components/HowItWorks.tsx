@@ -15,7 +15,7 @@ const HowItWorks = () => {
     {
       number: '01',
       title: 'Describe your concept',
-      description: 'Paste your product description or upload a mockup. Optionally choose a target persona such as "Gen Z budget shopper" or "eco-conscious parent."',
+      description: 'Paste your product description or upload a mockup. Optionally choose a target persona such as &ldquo;Gen Z budget shopper&rdquo; or &ldquo;eco-conscious parent.&rdquo;',
       icon: FileText,
       color: 'from-blue-500 to-blue-600'
     },
