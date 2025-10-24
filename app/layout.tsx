@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "SimuPanel",
     url: "https://simupanel.com",
+    images: [
+      {
+        url: "/og_image.png",
+        width: 1200,
+        height: 630,
+        alt: "SimuPanel - AI-Powered Consumer Concept Testing",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
