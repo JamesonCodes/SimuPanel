@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://simupanel.vercel.app'),
   title: "SimuPanel — AI-Powered Consumer Concept Testing | Validate Product Ideas in Minutes",
   description: "Validate your product ideas overnight — for the price of lunch. SimuPanel uses advanced language models and semantic analysis to replicate real consumer purchase intent with 90% of the accuracy of live focus groups.",
   keywords: ["AI consumer testing", "product validation", "market research", "concept testing", "purchase intent", "focus groups", "consumer behavior", "product launch", "startup validation", "market research AI"],
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "SimuPanel",
-    url: "https://simupanel.com",
+    url: "https://simupanel.vercel.app/",
     images: [
       {
         url: "/og_image.png",
