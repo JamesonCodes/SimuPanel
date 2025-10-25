@@ -69,7 +69,7 @@ const Hero = () => {
           >
             <button
               onClick={handleWaitlistClick}
-              className="group bg-blue-700 text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-blue-800 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="group bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-800 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Join the Waitlist
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
