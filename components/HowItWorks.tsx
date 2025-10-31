@@ -4,13 +4,6 @@ import { motion } from 'framer-motion';
 import { FileText, Users, BarChart3 } from 'lucide-react';
 
 const HowItWorks = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const steps = [
     {
       number: '01',
@@ -32,7 +25,7 @@ const HowItWorks = () => {
       description: 'Each reaction is compared to five calibrated anchor statements — from "definitely not" to "definitely yes" — using semantic similarity scoring. The result: a Likert-style intent distribution plus qualitative feedback that reads like a real focus group.',
       icon: BarChart3,
       color: 'from-purple-500 to-purple-600',
-      output: '⚡ Output: Purchase intent distribution + top quotes explaining the "why" — in under 60 seconds.'
+      output: 'Output: Purchase intent distribution + top quotes explaining the "why" — in under 60 seconds.'
     }
   ];
 
@@ -89,9 +82,10 @@ const HowItWorks = () => {
                     {step.description}
                   </p>
                   {step.output && (
-                    <div className="flex items-center gap-2 text-xs font-medium text-blue-600 bg-blue-50 px-4 py-3 rounded-lg">
-                      <span>⚡</span>
-                      <span>{step.output}</span>
+                    <div className="mt-6 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-4 shadow-sm">
+                      <p className="text-sm font-medium text-gray-900 leading-relaxed">
+                        {step.output}
+                      </p>
                     </div>
                   )}
                 </div>

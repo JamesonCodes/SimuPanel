@@ -45,11 +45,11 @@ const FAQ = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-200"
+              className="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden hover:bg-gray-100 hover:border-gray-300 transition-all duration-200"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-gray-100 transition-colors duration-200"
               >
                 <h3 className="text-lg font-semibold text-gray-900 pr-4">
                   {faq.question}

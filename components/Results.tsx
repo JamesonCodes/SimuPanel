@@ -27,7 +27,7 @@ const Results = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Example Output
@@ -37,7 +37,7 @@ const Results = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left side - Data Visualization */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

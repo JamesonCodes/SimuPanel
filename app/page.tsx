@@ -1,13 +1,12 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import WhatMakesItDifferent from '@/components/WhatMakesItDifferent';
-import WhyTeamsLoveIt from '@/components/WhyTeamsLoveIt';
 import HowItWorks from '@/components/HowItWorks';
-import Results from '@/components/Results';
 import UnderTheHood from '@/components/UnderTheHood';
+import Results from '@/components/Results';
 import WhoItsFor from '@/components/WhoItsFor';
-import Pricing from '@/components/Pricing';
 import Science from '@/components/Science';
+import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import FinalCTA from '@/components/FinalCTA';
 
@@ -17,13 +16,12 @@ export default function Home() {
       <Navigation />
       <Hero />
       <WhatMakesItDifferent />
-      <WhyTeamsLoveIt />
       <HowItWorks />
-      <Results />
       <UnderTheHood />
+      <Results />
       <WhoItsFor />
-      <Pricing />
       <Science />
+      <Pricing />
       <FAQ />
       <FinalCTA />
     </main>
