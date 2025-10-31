@@ -24,8 +24,7 @@ const HowItWorks = () => {
       title: 'Quantify purchase intent',
       description: 'Each reaction is compared to five calibrated anchor statements — from "definitely not" to "definitely yes" — using semantic similarity scoring. The result: a Likert-style intent distribution plus qualitative feedback that reads like a real focus group.',
       icon: BarChart3,
-      color: 'from-purple-500 to-purple-600',
-      output: 'Output: Purchase intent distribution + top quotes explaining the "why" — in under 60 seconds.'
+      color: 'from-purple-500 to-purple-600'
     }
   ];
 
@@ -78,16 +77,9 @@ const HowItWorks = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">
+                  <p className="text-gray-600 leading-relaxed">
                     {step.description}
                   </p>
-                  {step.output && (
-                    <div className="mt-6 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-4 shadow-sm">
-                      <p className="text-sm font-medium text-gray-900 leading-relaxed">
-                        {step.output}
-                      </p>
-                    </div>
-                  )}
                 </div>
               </motion.div>
             );
@@ -100,12 +92,12 @@ const HowItWorks = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="text-center bg-white rounded-lg p-8 border border-gray-200 shadow-sm max-w-4xl mx-auto"
+          className="text-center bg-gradient-to-br from-blue-50 via-purple-50 to-blue-50 rounded-xl p-8 border border-blue-200 shadow-md max-w-4xl mx-auto"
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             Get insights in minutes, not weeks
           </h3>
-          <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
             No need to find participants, schedule sessions, or wait for results.
           </p>
         </motion.div>

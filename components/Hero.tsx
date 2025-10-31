@@ -50,8 +50,8 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="space-y-4 mt-8"
           >
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              SimuPanel simulates real customer reactions — delivering human-level purchase intent and feedback in minutes, powered by peer-reviewed AI.
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              SimuPanel simulates real customer reactions with <strong className="text-gray-900">90% accuracy</strong> — delivering human-level purchase intent and feedback in minutes, powered by peer-reviewed AI.
             </p>
             <p className="text-sm text-gray-400 max-w-md mx-auto">
               No recruiting. No surveys. No waiting.
