@@ -36,11 +36,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight max-w-6xl mx-auto"
           >
             Test your ideas with{' '}
-            <span className="gradient-text">digital twins</span>
-            <br />
+            <span className="gradient-text whitespace-nowrap">digital twins</span>{' '}
             of your customers
           </motion.h1>
 
@@ -49,15 +48,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="space-y-3"
+            className="space-y-4 mt-8"
           >
-            <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              See how your buyers would actually respond — before you launch.
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              SimuPanel simulates real customer reactions — delivering human-level purchase intent and feedback in minutes, powered by peer-reviewed AI.
             </p>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              SimuPanel simulates real customer reactions using AI digital twins trained on your personas. Get human-level purchase intent and qualitative feedback in minutes, powered by the same peer-reviewed AI used by Colgate-Palmolive and PyMC Labs.
-            </p>
-            <p className="text-base text-gray-400 font-medium max-w-3xl mx-auto">
+            <p className="text-sm text-gray-400 max-w-md mx-auto">
               No recruiting. No surveys. No waiting.
             </p>
           </motion.div>
