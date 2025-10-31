@@ -16,7 +16,10 @@ const Results = () => {
   const sampleFeedback = [
     'I\'d probably try this — it sounds useful and fairly priced.',
     'The eco-friendly angle appeals to me.',
-    'Seems complex for my workflow; I\'d skip it.'
+    'Seems complex for my workflow; I\'d skip it.',
+    'This solves a problem I didn\'t even know I had. Definitely interested.',
+    'I\'d need to see more proof before committing, but the concept is solid.',
+    'Not sure it\'s worth switching from what I\'m currently using.'
   ];
 
   return (
