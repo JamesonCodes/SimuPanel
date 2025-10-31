@@ -14,11 +14,9 @@ const Results = () => {
   ];
 
   const sampleFeedback = [
-    'I\'d probably try this — especially if it\'s affordable.',
+    'I\'d probably try this — it sounds useful and fairly priced.',
     'The eco-friendly angle appeals to me.',
-    'Sounds innovative, but I\'d want proof of effectiveness.',
-    'This could solve a real problem I have.',
-    'Not sure if it\'s worth the price point.'
+    'Seems complex for my workflow; I\'d skip it.'
   ];
 
   return (
@@ -32,13 +30,10 @@ const Results = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Results You Can See
+            Example Output
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
-            Know not just what consumers think — but why.
-          </p>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Every simulation returns a complete Likert distribution plus the &ldquo;why&rdquo; behind the ratings.
+            See how your ideal customers would react to your product, ad, or campaign — instantly.
           </p>
         </motion.div>
 
@@ -58,7 +53,7 @@ const Results = () => {
                   <TrendingUp className="w-5 h-5 text-blue-600" />
                   <span className="text-sm font-medium text-gray-600">Mean Purchase Intent</span>
                 </div>
-                <div className="text-4xl font-bold text-gray-900">4.2</div>
+                <div className="text-4xl font-bold text-gray-900">4.1</div>
                 <div className="text-sm text-gray-500">out of 5</div>
               </div>
               <div className="bg-green-50 rounded-lg p-6 border border-green-200">
@@ -100,7 +95,7 @@ const Results = () => {
             {/* Runtime */}
             <div className="flex items-center gap-3 text-gray-400">
               <Clock className="w-4 h-4" />
-              <span className="text-xs">Runtime: ≈ 52 seconds per simulation</span>
+              <span className="text-xs">Runtime: ~55 seconds</span>
             </div>
           </motion.div>
 
@@ -112,7 +107,7 @@ const Results = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Sample Synthetic Feedback</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">Top Quotes</h3>
             
             <div className="space-y-3">
               {sampleFeedback.map((feedback, index) => (
@@ -132,28 +127,6 @@ const Results = () => {
               ))}
             </div>
 
-            {/* Additional Insights */}
-            <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
-              <h4 className="font-semibold text-gray-900 mb-4">What You Get</h4>
-              <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                  Complete Likert distribution with statistical significance
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                  Qualitative insights explaining purchase decisions
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                  Demographic breakdown by persona
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
-                  Exportable data for further analysis
-                </li>
-              </ul>
-            </div>
           </motion.div>
         </div>
       </div>

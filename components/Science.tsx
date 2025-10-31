@@ -15,14 +15,28 @@ const Science = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Science, Not Hype
+            Scientific Foundation
           </h2>
-          <p className="text-lg text-gray-500 mb-4">
-            Built on research that&apos;s actually been published — not &ldquo;AI magic.&rdquo;
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+            Powered by Semantic Similarity Rating (SSR)
           </p>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Powered by <span className="font-semibold text-gray-900">Semantic Similarity Rating (SSR)</span>, a peer-reviewed method developed by PyMC Labs and Colgate-Palmolive in 2025.
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-4">
+            Developed by PyMC Labs and Colgate-Palmolive, SSR enables LLMs to interpret natural-language feedback with human-level accuracy.
           </p>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-4">
+            Validated across 9,000 participants, SSR achieves ≈90% test–retest reliability — published in Maier et al., 2025.
+          </p>
+          <div className="flex justify-center">
+            <a 
+              href="https://arxiv.org/pdf/2510.08338v1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors border-b border-transparent hover:border-blue-600"
+            >
+              <BookOpen className="w-4 h-4" />
+              Read the Full Paper
+            </a>
+          </div>
         </motion.div>
 
         <div className="relative">
@@ -40,10 +54,10 @@ const Science = () => {
             <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <BookOpen className="w-5 h-5 text-blue-600" />
-                SSR Methodology
+                Peer-Reviewed Research
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                SSR allows large language models to replicate human purchase-intent ratings by analyzing open-ended responses and mapping them to a 5-point Likert scale — with proven statistical precision.
+                SSR — a peer-reviewed method for mapping natural language reactions to human-like intent scores. Published methodology (Maier et al., 2025) with academic validation across 9,000+ survey participants.
               </p>
             </div>
 
@@ -109,7 +123,7 @@ const Science = () => {
                   className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
                 >
                   <BookOpen className="w-4 h-4" />
-                  Read the full research paper
+                  Read the Full Paper
                 </a>
               </div>
             </div>

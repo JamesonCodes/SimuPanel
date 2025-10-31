@@ -13,7 +13,7 @@ const WhoItsFor = () => {
       icon: Users,
       title: 'Founders',
       category: 'Founder',
-      description: 'Quantify product-market fit before investing in inventory or ads. Validate ideas with real purchase-intent simulations in minutes.',
+      description: 'Validate product-market fit before spending on ads or manufacturing.',
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200'
@@ -22,7 +22,7 @@ const WhoItsFor = () => {
       icon: Target,
       title: 'Marketers',
       category: 'Marketing',
-      description: 'Measure message resonance and creative appeal using simulated consumer data. Optimize campaigns before launch.',
+      description: 'Test campaigns, positioning, and creative assets — and understand the why behind every response.',
       color: 'from-green-500 to-green-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200'
@@ -31,7 +31,7 @@ const WhoItsFor = () => {
       icon: Building2,
       title: 'Agencies',
       category: 'Agency',
-      description: 'Pre-screen creative concepts and back client reports with data-driven validation. Deliver research-grade insights fast.',
+      description: 'Back creative decisions with research-grade data clients can trust.',
       color: 'from-purple-500 to-purple-600',
       bgColor: 'bg-purple-50',
       borderColor: 'border-purple-200'
@@ -40,7 +40,7 @@ const WhoItsFor = () => {
       icon: Microscope,
       title: 'Researchers',
       category: 'Research',
-      description: 'Scale testing without panels or recruiting. Prototype surveys and rank concepts with SSR-powered accuracy.',
+      description: 'Prototype surveys and scale qualitative testing without panels or recruiting.',
       color: 'from-orange-500 to-orange-600',
       bgColor: 'bg-orange-50',
       borderColor: 'border-orange-200'
@@ -61,7 +61,7 @@ const WhoItsFor = () => {
             Use Cases & Who Benefits
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Research-backed consumer insights for teams who need statistically significant data, not guesswork.
+            Test campaigns, messaging, and product ideas with digital twins that think — and reason — like your customers.
           </p>
         </motion.div>
 
@@ -83,7 +83,7 @@ const WhoItsFor = () => {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-3">Product Validation</h4>
               <p className="text-gray-600">
-                Quantify purchase intent before manufacturing investment. 90% accuracy vs. human panels.
+                Validate product-market fit before spending on ads or manufacturing.
               </p>
             </div>
             
@@ -91,9 +91,9 @@ const WhoItsFor = () => {
               <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-3">Creative Testing</h4>
+              <h4 className="text-xl font-semibold text-gray-900 mb-3">Campaign Testing</h4>
               <p className="text-gray-600">
-                Measure message resonance and creative appeal with statistical significance.
+                Test campaigns, positioning, and creative assets — and understand the why behind every response.
               </p>
             </div>
             
@@ -103,7 +103,7 @@ const WhoItsFor = () => {
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-3">Research Scaling</h4>
               <p className="text-gray-600">
-                Screen concepts at scale. Prioritize human research based on SSR-powered rankings.
+                Prototype surveys and scale qualitative testing without panels or recruiting.
               </p>
             </div>
           </div>

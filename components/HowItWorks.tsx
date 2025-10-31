@@ -15,24 +15,24 @@ const HowItWorks = () => {
     {
       number: '01',
       title: 'Describe your concept',
-      description: 'Paste your product description or upload a mockup. Optionally choose a target persona such as &ldquo;Gen Z budget shopper&rdquo; or &ldquo;eco-conscious parent.&rdquo;',
+      description: 'Paste your product idea, campaign copy, or upload a creative mockup. Optionally choose or generate a target persona — e.g., VP of Marketing at a mid-market SaaS company.',
       icon: FileText,
       color: 'from-blue-500 to-blue-600'
     },
     {
       number: '02',
-      title: 'Simulate realistic consumers',
-      description: 'SimuPanel prompts AI personas to respond naturally — producing hundreds of purchase-intent statements as if you ran a real focus group.',
+      title: 'Simulate digital twins',
+      description: 'SimuPanel prompts AI personas to respond naturally, producing dozens of authentic reactions that mirror real consumer language.',
       icon: Users,
       color: 'from-green-500 to-green-600'
     },
     {
       number: '03',
-      title: 'Quantify intent with SSR',
-      description: 'Each response is converted to an embedding vector and compared against calibrated anchor statements. The result: a realistic Likert-style distribution that mirrors human survey data.',
+      title: 'Quantify purchase intent',
+      description: 'Each reaction is compared to five calibrated anchor statements — from "definitely not" to "definitely yes" — using semantic similarity scoring. The result: a Likert-style intent distribution plus qualitative feedback that reads like a real focus group.',
       icon: BarChart3,
       color: 'from-purple-500 to-purple-600',
-      output: 'Output: statistically representative purchase-intent distribution + text rationales in under 60 seconds.'
+      output: '⚡ Output: Purchase intent distribution + top quotes explaining the "why" — in under 60 seconds.'
     }
   ];
 
@@ -50,7 +50,7 @@ const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get statistically representative consumer data in three simple steps — no recruiting, no panels, no waiting.
+            Test campaigns, messaging, and product ideas with digital twins that think and reason like your customers.
           </p>
         </motion.div>
 
@@ -109,19 +109,11 @@ const HowItWorks = () => {
           className="text-center bg-white rounded-lg p-8 border border-gray-200 shadow-sm max-w-4xl mx-auto"
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
-            Consumer data, without consumers.
+            Get insights in minutes, not weeks
           </h3>
           <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
-            Get the insights you need in minutes, not weeks. No need to find participants, schedule sessions, or wait for results.
+            No need to find participants, schedule sessions, or wait for results.
           </p>
-          <div className="flex justify-center">
-            <button 
-              onClick={() => scrollToSection('science')}
-              className="text-gray-600 hover:text-gray-900 px-6 py-3 font-medium transition-colors border-b border-transparent hover:border-gray-400"
-            >
-              Learn More About SSR
-            </button>
-          </div>
         </motion.div>
       </div>
     </section>

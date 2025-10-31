@@ -3,15 +3,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://simupanel.vercel.app'),
-  title: "SimuPanel — AI-Powered Consumer Concept Testing | Validate Product Ideas in Minutes",
-  description: "Validate your product ideas overnight — for the price of lunch. SimuPanel uses advanced language models and semantic analysis to replicate real consumer purchase intent with 90% of the accuracy of live focus groups.",
-  keywords: ["AI consumer testing", "product validation", "market research", "concept testing", "purchase intent", "focus groups", "consumer behavior", "product launch", "startup validation", "market research AI"],
+  title: "SimuPanel — Test Ideas with Digital Twins of Your Customers | Customer Simulation Platform",
+  description: "Test your ideas with digital twins of your customers — before you launch. SimuPanel lets you see how your ideal customers would react to your product, ad, or campaign — instantly. Powered by peer-reviewed AI used by Colgate-Palmolive and PyMC Labs.",
+  keywords: ["digital twins", "customer simulation", "campaign testing", "product testing", "ad testing", "purchase intent", "AI customer insights", "product validation", "market research", "concept testing", "SSR", "semantic similarity", "customer personas", "buyer insights"],
   authors: [{ name: "SearchWell Labs LLC" }],
   creator: "SearchWell Labs LLC",
   publisher: "SearchWell Labs LLC",
   openGraph: {
-    title: "SimuPanel — AI-Powered Consumer Concept Testing",
-    description: "Validate your product ideas overnight — for the price of lunch. Get 90% accuracy of live focus groups in minutes.",
+    title: "SimuPanel — Test Ideas with Digital Twins of Your Customers",
+    description: "Test your ideas with digital twins of your customers — before you launch. See how your buyers would actually respond in minutes, powered by peer-reviewed AI.",
     type: "website",
     locale: "en_US",
     siteName: "SimuPanel",
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         url: "/og_image.png",
         width: 1200,
         height: 630,
-        alt: "SimuPanel - AI-Powered Consumer Concept Testing",
+        alt: "SimuPanel - Customer Simulation Platform with Digital Twins",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SimuPanel — AI-Powered Consumer Concept Testing",
-    description: "Validate your product ideas overnight — for the price of lunch. Get 90% accuracy of live focus groups in minutes.",
+    title: "SimuPanel — Test Ideas with Digital Twins of Your Customers",
+    description: "Test your ideas with digital twins of your customers — before you launch. See how your buyers would actually respond in minutes.",
     creator: "@simupanel",
   },
   robots: {

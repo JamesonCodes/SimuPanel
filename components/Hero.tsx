@@ -38,10 +38,10 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight"
           >
-            Validate your product ideas{' '}
-            <span className="gradient-text">overnight</span>
+            Test your ideas with{' '}
+            <span className="gradient-text">digital twins</span>
             <br />
-            — for the price of lunch.
+            of your customers
           </motion.h1>
 
           {/* Subheadline */}
@@ -52,11 +52,13 @@ const Hero = () => {
             className="space-y-3"
           >
             <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Get human-level purchase intent data in minutes, powered by peer-reviewed AI that replicates real focus groups with{' '}
-              <span className="font-semibold text-gray-900">90% accuracy</span>.
+              See how your buyers would actually respond — before you launch.
+            </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              SimuPanel simulates real customer reactions using AI digital twins trained on your personas. Get human-level purchase intent and qualitative feedback in minutes, powered by the same peer-reviewed AI used by Colgate-Palmolive and PyMC Labs.
             </p>
             <p className="text-base text-gray-400 font-medium max-w-3xl mx-auto">
-              No surveys. No panels. No delays.
+              No recruiting. No surveys. No waiting.
             </p>
           </motion.div>
 
@@ -79,7 +81,7 @@ const Hero = () => {
               onClick={() => scrollToSection('results')}
               className="group text-gray-600 hover:text-gray-900 px-8 py-4 text-lg font-medium transition-all duration-200 flex items-center gap-2 border border-gray-300 rounded-xl hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-md"
             >
-              View Example Results
+              See Example Results
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>

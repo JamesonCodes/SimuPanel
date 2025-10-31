@@ -4,6 +4,7 @@ export interface PricingTier {
   price: number;
   originalPrice?: number;
   description: string;
+  tagline: string;
   features: string[];
   cta: string;
   popular?: boolean;
@@ -15,7 +16,8 @@ export const pricingTiers: PricingTier[] = [
     id: 'single',
     name: '🧪 Single Test',
     price: 9,
-    description: 'Run one simulation with 100 synthetic responses. Perfect for quick validation or product testing.',
+    description: 'Run one simulation with 100 AI responses. Ideal for quick validation.',
+    tagline: 'Quick idea validation',
     features: [
       '100 synthetic responses',
       'Likert distribution + rationales',
@@ -29,7 +31,8 @@ export const pricingTiers: PricingTier[] = [
     name: '⚙️ 5-Pack',
     price: 35,
     originalPrice: 45,
-    description: 'Run five simulations. Best for testing multiple concepts or campaigns.',
+    description: 'Test multiple ideas or variants.',
+    tagline: 'Compare campaigns fast',
     features: [
       '5 simulations total',
       'Priority processing',
@@ -43,7 +46,8 @@ export const pricingTiers: PricingTier[] = [
     name: '🚀 20-Pack',
     price: 99,
     originalPrice: 140,
-    description: 'Run twenty simulations. Ideal for teams or researchers running frequent tests.',
+    description: 'For teams or agencies running frequent tests. Includes persona customization + API access.',
+    tagline: 'Scale testing for teams',
     features: [
       '20 simulations total',
       'Full persona customization',

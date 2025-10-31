@@ -27,9 +27,10 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Description of Service</h2>
             <p className="text-gray-700 leading-relaxed">
-              SimuPanel is a consumer behavior simulation platform that uses artificial intelligence and peer-reviewed 
-              science to help businesses validate product ideas and make data-driven decisions. The Service is currently 
-              in development and available through our waitlist program.
+              SimuPanel is a customer simulation platform powered by Semantic Similarity Rating (SSR) that enables businesses 
+              to test campaigns, messaging, and product ideas with digital twins of their customers. The Service uses 
+              artificial intelligence and peer-reviewed science to simulate real customer reactions and provide purchase intent 
+              insights. The Service is currently in development and available through our waitlist program.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. User Accounts and Registration</h2>

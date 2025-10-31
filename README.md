@@ -1,10 +1,10 @@
-# SimuPanel — AI-Powered Consumer Concept Testing
+# SimuPanel — Customer Simulation Platform
 
-A Next.js marketing website for SimuPanel, an AI-powered consumer concept testing platform that provides statistically representative purchase-intent data in minutes using peer-reviewed Semantic Similarity Rating (SSR) methodology.
+A Next.js marketing website for SimuPanel, a customer simulation platform powered by SSR that lets you test campaigns with lifelike digital twins of your buyers before you launch.
 
 ## 🚀 Overview
 
-SimuPanel combines validated AI with peer-reviewed science to simulate real consumer responses instantly. Get human-level purchase intent data with 90% accuracy — without the cost, time, or complexity of traditional focus groups.
+SimuPanel lets you see how your ideal customers would react to your product, ad, or campaign — instantly. Test ideas with digital twins that think — and reason — like your customers. Get human-level purchase intent and qualitative feedback in minutes, powered by the same peer-reviewed AI used by Colgate-Palmolive and PyMC Labs.
 
 ## ✨ Features
 

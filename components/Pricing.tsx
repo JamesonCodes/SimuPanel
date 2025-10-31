@@ -26,10 +26,10 @@ const Pricing = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Coming Soon: Simple, one-click pricing
+            Pricing Preview
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our waitlist to be the first to access SimuPanel when we launch.
+            Simple, transparent pricing for teams who want to test before they launch.
           </p>
         </motion.div>
 
@@ -49,6 +49,9 @@ const Pricing = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {tier.name}
                 </h3>
+                <p className="text-sm font-medium text-blue-600 mb-2">
+                  {tier.tagline}
+                </p>
                 <p className="text-gray-600 text-sm mb-4">
                   {tier.description}
                 </p>

@@ -7,8 +7,8 @@ const UnderTheHood = () => {
   const steps = [
     {
       number: '1',
-      title: 'Generate Realistic Responses',
-      description: 'Persona-conditioned prompting produces natural consumer statements.',
+      title: 'Generate Realistic Reactions',
+      description: 'Persona-conditioned prompting creates diverse, natural language responses.',
       icon: Cpu,
       details: [
         'Persona-conditioned prompting',
@@ -19,7 +19,7 @@ const UnderTheHood = () => {
     {
       number: '2',
       title: 'Encode Semantic Meaning',
-      description: 'High-dimensional embeddings capture semantic similarity and context.',
+      description: 'High-dimensional embeddings capture emotional nuance and reasoning.',
       icon: Database,
       details: [
         'High-dimensional embeddings',
@@ -30,7 +30,7 @@ const UnderTheHood = () => {
     {
       number: '3',
       title: 'Map to Likert Scale',
-      description: 'Calibrated anchor statements yield realistic purchase-intent distributions.',
+      description: 'Responses are compared to five anchors for consistent scoring.',
       icon: BarChart3,
       details: [
         'Calibrated anchor statements',
@@ -60,7 +60,7 @@ const UnderTheHood = () => {
             Under the Hood
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The process behind every simulation — for teams who care how the data&apos;s made, not just what it says.
+            Every SimuPanel result follows a transparent, research-validated pipeline.
           </p>
         </motion.div>
 

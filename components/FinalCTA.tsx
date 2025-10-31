@@ -20,10 +20,10 @@ const FinalCTA = () => {
   };
 
   const benefits = [
-    'Get results in minutes, not months',
-    '90% of human focus-group accuracy',
-    'No recruiting, scheduling, or surveys needed',
-    'Backed by peer-reviewed science'
+    'Instant clarity – Know whether your message resonates before spending a dollar on ads',
+    'Human context – Every score includes reasoning in natural language',
+    'Science-backed – Built on published 2025 research validated across 9,000+ participants',
+    'Plug-and-play – No setup, recruiting, or waiting required'
   ];
 
   return (
@@ -47,12 +47,19 @@ const FinalCTA = () => {
           className="text-center"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Make confident, data-backed decisions — in{' '}
-            <span className="text-blue-400">minutes</span>, not months.
+            The Result
           </h2>
           
-          <p className="text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
-            SimuPanel uses validated AI and peer-reviewed science to simulate real consumer behavior — instantly.
+          <p className="text-xl text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed">
+            Human insight, machine speed.
+          </p>
+          
+          <p className="text-lg text-gray-400 mb-10 max-w-4xl mx-auto leading-relaxed">
+            SimuPanel helps you test ideas before launch with digital twins that think — and reason — like your customers.
+          </p>
+          
+          <p className="text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed font-semibold">
+            Make confident, data-backed decisions — in minutes, not months.
           </p>
 
           {/* Benefits Grid */}
@@ -105,7 +112,7 @@ const FinalCTA = () => {
             className="mt-16 pt-8 border-t border-gray-700"
           >
             <p className="text-sm text-gray-400 text-center">
-              Backed by peer-reviewed research — powered by Semantic Similarity Rating (SSR).
+              Built on Semantic Similarity Rating (SSR) — peer-reviewed and published (Maier et al., 2025).
             </p>
             <div className="mt-4 flex justify-center gap-6 text-xs text-gray-500">
               <a href="/privacy" className="hover:text-gray-300 transition-colors">
