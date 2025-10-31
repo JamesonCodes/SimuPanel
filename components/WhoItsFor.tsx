@@ -46,10 +46,10 @@ const WhoItsFor = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Who It's For
+            Who It&apos;s For
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Whether you're validating a new product, testing creative, or scaling research — SimuPanel gives founders, marketers, and researchers human insight at machine speed.
+            Whether you&apos;re validating a new product, testing creative, or scaling research — SimuPanel gives founders, marketers, and researchers human insight at machine speed.
           </p>
         </motion.div>
 

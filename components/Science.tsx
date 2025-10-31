@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CheckCircle, BarChart3, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 const Science = () => {
   return (

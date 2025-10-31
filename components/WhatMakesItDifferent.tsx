@@ -26,7 +26,7 @@ const WhatMakesItDifferent = () => {
               <strong className="text-gray-900">Lifelike Digital Twins</strong> – Simulate real buyer reactions and reasoning.
             </p>
             <p className="text-lg font-semibold text-gray-900">
-              <strong className="text-gray-900">Natural Language Insight</strong> – Understand the "why," not just the score.
+              <strong className="text-gray-900">Natural Language Insight</strong> – Understand the &ldquo;why,&rdquo; not just the score.
             </p>
             <p className="text-lg font-semibold text-gray-900">
               <strong className="text-gray-900">Proven Accuracy</strong> – Powered by peer-reviewed AI with 90% human reliability.
